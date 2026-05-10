@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Makłowicz — Smak jest najważniejszy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Caveat:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="screen-intro">
+        <div class="intro-glow"></div>
+        <div class="intro-ruled"></div>
+        <div class="intro-border"></div>
+        <div class="intro-stamp">
+            <span class="intro-stamp-year">1963</span>
+            <span class="intro-stamp-city">Kraków</span>
+        </div>
+        <div class="intro-content">
+            <p class="intro-kicker">✦ podróże kulinarne ✦</p>
+            <h1 class="intro-name">
+                Robert
+                <em class="intro-name-second">Makłowicz</em>
+            </h1>
+            <div class="intro-rule">
+                <div class="intro-rule-line"></div>
+                <div class="intro-rule-diamond"></div>
+                <div class="intro-rule-line"></div>
+            </div>
+            <p class="intro-sub">
+                Historyk. Krytyk kulinarny. Podróżnik.<br>
+                Człowiek, który wie, że smak jest najważniejszy.
+            </p>
+            <button class="btn-dalej" onclick="idźDoWideo()"><span>Dalej →</span></button>
+        </div>
+    </div>
+
+    <div id="screen-video">
+        <div class="video-wrap">
+            <p class="video-naglowek">✎ wizytówka wideo</p>
+            <div class="video-area" id="videoArea">
+                <video id="myVideo" controls preload="auto" src="picture/FIlmikkk.mp4"></video>
+                
+                <div class="upload-zone" id="uploadZone" onclick="startPreloadedVideo()">
+                    <div class="upload-ikona">
+                        <svg width="22" height="22" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span class="upload-tekst">Click!!!</span>
+                </div>
+            </div>
+        </div>
+        <button class="btn-pomin" onclick="idźDoBio()">Przejdź do wizytówki →</button>
+    </div>
+
+    <div id="screen-bio">
+
+        <div class="hero">
+            <div class="hero-l">
+                <div class="hero-ghost">1963</div>
+                <p class="hero-tag">Kraków, 12 sierpnia 1963</p>
+                <h1 class="hero-name">
+                    Robert
+                    <em>Makłowicz</em>
+                </h1>
+                <div class="hero-divider">
+                    <div class="hero-divider-line"></div>
+                    <span class="hero-divider-ornament">✦</span>
+                    <div class="hero-divider-line"></div>
+                </div>
+                <ul class="hero-roles">
+                    <li>Dziennikarz &amp; krytyk kulinarny</li>
+                    <li>Prezenter telewizyjny &amp; podróżnik</li>
+                    <li>Popularyzator kuchni polskiej</li>
+                    <li>Autor książek o Galicji</li>
+                </ul>
+                <span class="hero-born">ur. 12 VIII 1963 · Kraków, Polska</span>
+            </div>
+            <div class="hero-r">
+                <div class="hero-r-texture"></div>
+                <div class="hero-r-glow"></div>
+                <div class="portrait-wrap">
+                    <div class="portrait-frame">
+                        <span class="portrait-monogram">RM</span>
+                    </div>
+                    <p class="portrait-caption">
+                        „Jedzenie to nie tylko pożywienie.<br>To kultura, historia<br>i pamięć narodu."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cytat-band">
+            <div class="cytat-inner">
+                <p class="cytat-tekst">
+                    Smak jest najważniejszy — bo łączy nas z miejscem, z ludźmi<br>
+                    i z całą historią tego, co leży na talerzu.
+                </p>
+                <span class="cytat-autor">— Robert Makłowicz</span>
+            </div>
+        </div>
+
+        <div class="sekcja">
+            <div class="sekcja-nagl">
+                <span class="sekcja-numer">01</span>
+                <div class="sekcja-kreska"></div>
+                <span class="sekcja-etykieta">Biografia</span>
+            </div>
+            <h2 class="sekcja-tytul">Od Uniwersytetu Jagiellońskiego<br>do <em>kuchni całego świata</em></h2>
+            <div class="sekcja-tekst">
+                <p>Robert Witold Makłowicz urodził się 12 sierpnia 1963 roku w Krakowie. Jego ojciec Włodzimierz był
+                    marynarzem — być może właśnie stąd przyszłemu podróżnikowi zapadł w pamięć urok odległych
+                    horyzontów. Rodzina ma korzenie polskie, ukraińskie, ormiańskie, węgierskie i austriackie — barwne
+                    dziedzictwo Galicji, którą Makłowicz tak ukochał.</p>
+                <p>Studiował prawo na Uniwersytecie Jagiellońskim, by wkrótce porzucić je na rzecz historii — dyplom z
+                    tego kierunku uzyskał w 1989 roku. To właśnie podczas studiów odkrył fascynację kulinarnymi
+                    tradycjjami Europy Środkowej.</p>
+                <p>Po obronie wyjechał do Wielkiej Brytanii, gdzie pracował fizycznie i zetknął się z niezwykłą
+                    różnorodnością światowej kuchni. Powrócił do Polski w 1990 roku z mocnym postanowieniem: zostanie
+                    krytykiem kulinarnym.</p>
+                <p>W 1993 roku, pokazując znajomemu przepis na wiedeński sznycel, niespodziewanie otrzymał propozycję
+                    pisania felietonów do krakowskiego dodatku „Gazety Wyborczej". Jego eseje o restauracjach szybko
+                    stały się tak popularne, że trafił do ogólnopolskiego tygodnika. Zaczęła się legenda.</p>
+            </div>
+        </div>
+
+        <div class="strip-liczby">
+            <div class="liczba-item">
+                <div class="liczba-val">30+</div>
+                <div class="liczba-label">lat w dziennikarstwie</div>
+            </div>
+            <div class="liczba-item">
+                <div class="liczba-val">800k</div>
+                <div class="liczba-label">obserwujących na Instagramie</div>
+            </div>
+            <div class="liczba-item">
+                <div class="liczba-val">3</div>
+                <div class="liczba-label">książki o Galicji</div>
+            </div>
+            <div class="liczba-item">
+                <div class="liczba-val">∞</div>
+                <div class="liczba-label">odkryć smakowych</div>
+            </div>
+        </div>
+
+        <div class="linia-wrap">
+            <h2 class="linia-tytul">Kronika <em>kulinarnych podróży</em></h2>
+            <div class="linia-inner">
+                <div class="linia-pozycje">
+
+                    <div class="linia-poz">
+                        <div class="linia-karta">
+                            <div class="linia-rok">1963</div>
+                            <div class="linia-opis">Urodzony w Krakowie. Studia prawnicze, potem historyczne na
+                                Uniwersytecie Jagiellońskim. Fascynacja kuchnią galicyjską.</div>
+                        </div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-empty"></div>
+                    </div>
+
+                    <div class="linia-poz">
+                        <div class="linia-empty"></div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-karta">
+                            <div class="linia-rok">1989–90</div>
+                            <div class="linia-opis">Dyplom z historii. Wyjazd do Wielkiej Brytanii — praca fizyczna i
+                                odkrywanie wielości smaków Europy.</div>
+                        </div>
+                    </div>
+
+                    <div class="linia-poz">
+                        <div class="linia-karta">
+                            <div class="linia-rok">1993</div>
+                            <div class="linia-opis">Debiut jako krytyk kulinarny w krakowskim dodatku „Gazety
+                                Wyborczej". Felietony o restauracjach podbijają czytelników.</div>
+                        </div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-empty"></div>
+                    </div>
+
+                    <div class="linia-poz">
+                        <div class="linia-empty"></div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-karta">
+                            <div class="linia-rok">1996</div>
+                            <div class="linia-opis">Pierwsze pojawienie się w telewizji publicznej — poranny blok
+                                kulinarny. Pomimo wczesnej pory, program zyskuje wielką popularność.</div>
+                        </div>
+                    </div>
+
+                    <div class="linia-poz">
+                        <div class="linia-karta">
+                            <div class="linia-rok">1998</div>
+                            <div class="linia-opis">Premiera tygodniowego programu „Podróże kulinarne Roberta
+                                Makłowicza" w TVP. Każdy odcinek — z innego zakątka świata.</div>
+                        </div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-empty"></div>
+                    </div>
+
+                    <div class="linia-poz">
+                        <div class="linia-empty"></div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-karta">
+                            <div class="linia-rok">1999–</div>
+                            <div class="linia-opis">Wydaje serię bestsellerowych książek o tradycjach kulinarnych
+                                Galicji: <em>C.K. Kuchnia</em>, <em>Zjeść Kraków</em> i inne.</div>
+                        </div>
+                    </div>
+
+                    <div class="linia-poz">
+                        <div class="linia-karta">
+                            <div class="linia-rok">2017</div>
+                            <div class="linia-opis">Koniec współpracy z TVP. Program „Makłowicz w podróży" przenosi się
+                                na Polish Food Network.</div>
+                        </div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-empty"></div>
+                    </div>
+
+                    <div class="linia-poz">
+                        <div class="linia-empty"></div>
+                        <div class="linia-dot-col">
+                            <div class="linia-dot"></div>
+                        </div>
+                        <div class="linia-karta">
+                            <div class="linia-rok">2020</div>
+                            <div class="linia-opis">Własny kanał na YouTube. Błyskawiczny wzrost widowni — Makłowicz
+                                zdobywa nowe pokolenie widzów w sieci.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ksiazki-wrap">
+            <div class="ksiazki-inner">
+                <div class="sekcja-nagl">
+                    <span class="sekcja-numer">02</span>
+                    <div class="sekcja-kreska"></div>
+                    <span class="sekcja-etykieta">Książki</span>
+                </div>
+                <h2 class="sekcja-tytul">Pisane z miłości<br><em>do Galicji i jej kuchni</em></h2>
+                <div class="ksiazki-grid">
+                    <div class="ksiazka-karta">
+                        <div class="ksiazka-rok">1999</div>
+                        <div class="ksiazka-tytul">C.K. Kuchnia</div>
+                        <div class="ksiazka-podtytul">Kuchnia galicyjska — bestseller ogólnopolski</div>
+                    </div>
+                    <div class="ksiazka-karta">
+                        <div class="ksiazka-rok">2001</div>
+                        <div class="ksiazka-tytul">Zjeść Kraków</div>
+                        <div class="ksiazka-podtytul">ze Stanisławem Mancewiczem</div>
+                    </div>
+                    <div class="ksiazka-karta">
+                        <div class="ksiazka-rok">2003</div>
+                        <div class="ksiazka-tytul">Dialogi języka z podniebieniem</div>
+                        <div class="ksiazka-podtytul">z Piotrem Bikontem</div>
+                    </div>
+                    <div class="ksiazka-karta">
+                        <div class="ksiazka-rok">2005+</div>
+                        <div class="ksiazka-tytul">Felietony dla Newsweek Polska</div>
+                        <div class="ksiazka-podtytul">publicystyka kulinarna</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="podroze-wrap">
+            <div class="podroze-inner">
+                <h2 class="podroze-tytul">Smak <em>na wszystkich szerokościach</em></h2>
+                <p class="podroze-sub">Wybrane destynacje z kulinarnych podróży</p>
+                <div class="miejsca-grid">
+                    <span class="miejsce-tag">Kraków</span>
+                    <span class="miejsce-tag">Lwów</span>
+                    <span class="miejsce-tag">Wiedeń</span>
+                    <span class="miejsce-tag">Budapeszt</span>
+                    <span class="miejsce-tag">Praga</span>
+                    <span class="miejsce-tag">Stambuł</span>
+                    <span class="miejsce-tag">Tbilisi</span>
+                    <span class="miejsce-tag">Neapol</span>
+                    <span class="miejsce-tag">Lyon</span>
+                    <span class="miejsce-tag">Madryt</span>
+                    <span class="miejsce-tag">Lizbona</span>
+                    <span class="miejsce-tag">Ateny</span>
+                    <span class="miejsce-tag">Warszawa</span>
+                    <span class="miejsce-tag">Bałkany</span>
+                    <span class="miejsce-tag">Sycylia</span>
+                    <span class="miejsce-tag">Armenia</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="stopka">
+            <div class="stopka-logo">Robert Makłowicz</div>
+            <div class="stopka-haslo">Smak jest najważniejszy ✦</div>
+            <div class="stopka-info">Kraków · Polska · od 1963</div>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
